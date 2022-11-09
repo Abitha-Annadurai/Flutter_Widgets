@@ -40,45 +40,15 @@ class _HomePageState extends State<HomePage> {
       body: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("assest/bg1.jpg"),
+              image: AssetImage("assest/bg6.jpg"),
               fit: BoxFit.cover,
             ),
           ),
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-               Column(
-                    children: [
-                      Container(
-                        padding: EdgeInsets.only(left: 10,),
-                        child: Row(
-                          children: [
-                            TextButton(onPressed: (){
-                              //Navigator.of(context).push(MaterialPageRoute(builder: (context) => AppbarList(),),);
-                            },
-                              child: Text('AppBar',
-                                style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        padding: EdgeInsets.only(left: 50,),
-                        child: Row(
-                          children: [
-                            TextButton(onPressed: (){
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => WidgetTypes(),),);
-                            },
-                              child: Text('Widget', style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),),
-                            ),
-                          ],
-                        ),
-                      ),
-
-                    ],
-                  ),
-              ],
+          child: Center(
+            child: TextButton(onPressed: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => WidgetTypes(),),);
+              },
+              child: Text('Widget', style: TextStyle(color: Colors.black, fontSize: 40, fontWeight: FontWeight.bold),),
             ),
           ),
         ),
