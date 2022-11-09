@@ -5,7 +5,7 @@ import 'package:flutter_widget/widget/switch_code.dart';
 import 'package:flutter_widget/widget/text_types.dart';
 import 'package:flutter_widget/widget/textfield_types.dart';
 import 'package:flutter_widget/widget/textformfieldtypes.dart';
-
+import 'typographytext.dart';
 import 'button_types.dart';
 import 'card_code.dart';
 import 'checkbox_code.dart';
@@ -97,6 +97,12 @@ class _WidgetTypesState extends State<WidgetTypes> {
               )),
               TextButton(onPressed: (){
                 Navigator.of(context).push(MaterialPageRoute(builder: (context) => TextFieldTypes(),),);
+              }, child: Text('TextField',
+                style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
+              )),
+
+              TextButton(onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => Typography1(),),);
               }, child: Text('TextField',
                 style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
               )),
